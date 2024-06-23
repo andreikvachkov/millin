@@ -1551,6 +1551,9 @@ footer .copyright {
     width: 100%;
     height: auto;
 }
+.storefront__bg_mob {
+    display: none;
+}
 @media (max-width: 768px) {
     .storefront__wrap {
         padding: 1.0625rem 0;
