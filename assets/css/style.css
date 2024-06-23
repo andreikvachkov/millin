@@ -1584,7 +1584,7 @@ footer .copyright {
 
 /* giftsets start  */
 .giftsets {
-    padding: 5rem 0;
+    padding: 5rem 0 2.5rem;
 }
 .giftsets__title {
     padding-bottom: 0.75rem;
