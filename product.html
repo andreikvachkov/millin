@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Millin</title>
+
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+	<link rel="stylesheet" href="assets/fonts/stylesheet.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="header__wrap">
+				<div class="col">
+					<a href="" class="header__logo">
+						<img src="assets/images/logo.svg" alt="">
+					</a>
+				</div>
+				<nav>
+					<ul>
+						<li>
+							<a href="" class="active">
+								About Us
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Store
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Corporate Gifting
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Cocktails
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="col">
+					<div class="header__buttons">
+						<a href="" class="header__cart">
+							<img src="assets/images/cart.svg" alt="">
+							<span>
+								2
+							</span>
+						</a>
+						<a href="" class="header__account">
+							<img src="assets/images/acc.svg" alt="">
+						</a>
+						<button class="burger header__burger">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path d="M7 8H17M7 12H17M7 16H17" stroke="#141718" stroke-width="1.5"
+									stroke-linecap="round" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="productheader">
+		<div class="container">
+			<div class="productheader__wrap">
+				<a href="" class="productheader__back">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M15 18L9 12L15 6" stroke="#010101" stroke-width="2" />
+					</svg>
+					Back to store
+				</a>
+				<ul class="productheader__breadcrumb">
+					<li>
+						<a href="">
+							home
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Store
+						</a>
+					</li>
+					<li>
+						Product page
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section class="product">
+		<div class="container">
+			<div class="product__wrap">
+				<div class="product__left">
+					<div class="product__header">
+						<div class="name">
+							Oranges
+						</div>
+						<div class="description">
+							100% Natural Dehydrated Orange Slices
+						</div>
+					</div>
+					<div class="line"></div>
+					<div class="product__item">
+						<div class="product__item__name">
+							Flavor Profile 
+						</div>
+						<ul>
+							<li>
+								Dehydrated Orange slices boost natural citrus notes, introducing a lively and
+								invigorating burst of orange essence;
+							</li>
+							<li>
+								Harmonize well with the botanicals in gin, offering a delightful citrus twist;
+							</li>
+							<li>
+								Bring out sweetness in vodka and tequila;
+							</li>
+							<li>
+								Perfect Cocktail Garnish;
+							</li>
+						</ul>
+					</div>
+					<div class="product__item">
+						<div class="product__item__name">
+							All Natural Ingredients 
+						</div>
+						<div class="product__item__text">
+							Picked at peak freshness and dehydrated at low temperatures for 5 hours to retain original
+							flavor and appearance. <br>
+							100% Natural, Sugar-FREE, Additive-FREE, Color-FREE, Preservative-FREE, Nitrites-FREE
+						</div>
+					</div>
+					<div class="product__item">
+						<details>
+							<summary>great in mixology</summary>
+							<div class="content">
+								<ul>
+									<li>
+										Dehydrated Oranges are the most versatile garnish in Mixology, offering
+										versatility and vibrant flavor;
+									</li>
+									<li>
+										Makes vibrant addition to cocktails, mocktails, and other non-alcoholic drinks;
+									</li>
+									<li>
+										Experience burst of sweet and tangy flavor, aroma, and visual just by adding
+										dehydrated Oranges to lemonade, tea, or water;
+									</li>
+									<li>
+										Can adorn the rim of a glass, float within the drink, or embellish cocktail
+										picks;
+									</li>
+									<li>
+										Can infuse both water and spirit drinks with their exotic essence.
+									</li>
+								</ul>
+							</div>
+						</details>
+					</div>
+					<div class="product__item">
+						<details>
+							<summary>Product details</summary>
+							<div class="content">
+								Fruit sourced in Thailand, Vietnam <br>
+								Packed in China <br>
+								Shelf life: 12–18 months <br>
+								Storage: Shelf-stable, away from sun <br>
+								Weight: 3oz – 25+ Slices <br>
+								Dimensions: 8 x 5.5 x 2 in (20.3 x 14 x 5.1 cm)
+							</div>
+						</details>
+					</div>
+					<div class="line"></div>
+					<div class="product__price">
+						<div class="price">
+							<span class="sale">
+								$14.75
+							</span>
+							<span class="old">
+								$35.99
+							</span>
+						</div>
+						<div class="counter">
+							<span class="down" onClick='decreaseCount(event, this)'>
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M4.03711 10H15.7038" stroke="#010101" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</span>
+							<input type="text" value="1">
+							<span class="up" onClick='increaseCount(event, this)'>
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M10.4679 4.16699C10.4679 3.90811 10.258 3.69824 9.99915 3.69824C9.74026 3.69824 9.5304 3.90811 9.5304 4.16699V9.53152H4.16602C3.90713 9.53152 3.69727 9.74139 3.69727 10.0003C3.69727 10.2592 3.90713 10.469 4.16602 10.469H9.5304V15.8337C9.5304 16.0925 9.74026 16.3024 9.99915 16.3024C10.258 16.3024 10.4679 16.0925 10.4679 15.8337V10.469H15.8327C16.0916 10.469 16.3014 10.2592 16.3014 10.0003C16.3014 9.74139 16.0916 9.53152 15.8327 9.53152H10.4679V4.16699Z"
+										fill="#010101" />
+									<path
+										d="M9.5304 9.53152V10.0315C9.80654 10.0315 10.0304 9.80767 10.0304 9.53152H9.5304ZM9.5304 10.469H10.0304C10.0304 10.1929 9.80654 9.96902 9.5304 9.96902V10.469ZM10.4679 10.469V9.96902C10.1918 9.96902 9.9679 10.1929 9.9679 10.469H10.4679ZM10.4679 9.53152H9.9679C9.9679 9.80767 10.1918 10.0315 10.4679 10.0315V9.53152ZM9.99915 4.19824C9.98189 4.19824 9.9679 4.18425 9.9679 4.16699H10.9679C10.9679 3.63197 10.5342 3.19824 9.99915 3.19824V4.19824ZM10.0304 4.16699C10.0304 4.18425 10.0164 4.19824 9.99915 4.19824V3.19824C9.46412 3.19824 9.0304 3.63197 9.0304 4.16699H10.0304ZM10.0304 9.53152V4.16699H9.0304V9.53152H10.0304ZM4.16602 10.0315H9.5304V9.03152H4.16602V10.0315ZM4.19727 10.0003C4.19727 10.0175 4.18327 10.0315 4.16602 10.0315V9.03152C3.63099 9.03152 3.19727 9.46525 3.19727 10.0003H4.19727ZM4.16602 9.96902C4.18327 9.96902 4.19727 9.98302 4.19727 10.0003H3.19727C3.19727 10.5353 3.63099 10.969 4.16602 10.969V9.96902ZM9.5304 9.96902H4.16602V10.969H9.5304V9.96902ZM10.0304 15.8337V10.469H9.0304V15.8337H10.0304ZM9.99915 15.8024C10.0164 15.8024 10.0304 15.8164 10.0304 15.8337H9.0304C9.0304 16.3687 9.46412 16.8024 9.99915 16.8024V15.8024ZM9.9679 15.8337C9.9679 15.8164 9.98189 15.8024 9.99915 15.8024V16.8024C10.5342 16.8024 10.9679 16.3687 10.9679 15.8337H9.9679ZM9.9679 10.469V15.8337H10.9679V10.469H9.9679ZM15.8327 9.96902H10.4679V10.969H15.8327V9.96902ZM15.8014 10.0003C15.8014 9.98302 15.8154 9.96902 15.8327 9.96902V10.969C16.3677 10.969 16.8014 10.5353 16.8014 10.0003H15.8014ZM15.8327 10.0315C15.8154 10.0315 15.8014 10.0175 15.8014 10.0003H16.8014C16.8014 9.46525 16.3677 9.03152 15.8327 9.03152V10.0315ZM10.4679 10.0315H15.8327V9.03152H10.4679V10.0315ZM9.9679 4.16699V9.53152H10.9679V4.16699H9.9679Z"
+										fill="#010101" />
+								</svg>
+							</span>
+						</div>
+					</div>
+					<a href="" class="product__add">
+						Add to cart
+					</a>
+				</div>
+				<div class="product__right">
+					<div class="swiper productSwiper2">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="assets/images/productimg1.png" />
+							</div>
+							<div class="swiper-slide">
+								<img src="assets/images/productimg2.png" />
+							</div>
+							<div class="swiper-slide">
+								<img src="assets/images/productimg3.png" />
+							</div>
+							<div class="swiper-slide">
+								<img src="assets/images/productimg4.png" />
+							</div>
+							<div class="swiper-slide">
+								<img src="assets/images/productimg5.png" />
+							</div>
+						</div>
+						<div class="product-button-next">
+							<img src="assets/images/right.svg" alt="">
+						</div>
+						<div class="product-button-prev">
+							<img src="assets/images/left.svg" alt="">
+						</div>
+					</div>
+					<div thumbsSlider="" class="swiper productSwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="assets/images/productimg1.png" />
+							</div>
+							<div class="swiper-slide">
+								<img src="assets/images/productimg2.png" />
+							</div>
+							<div class="swiper-slide">
+								<img src="assets/images/productimg3.png" />
+							</div>
+							<div class="swiper-slide">
+								<img src="assets/images/productimg4.png" />
+							</div>
+							<div class="swiper-slide">
+								<img src="assets/images/productimg5.png" />
+							</div>
+						</div>
+					</div>
+					<script>
+						var swiper = new Swiper(".productSwiper", {
+							loop: true,
+							spaceBetween: 24,
+							slidesPerView: 3.5,
+							freeMode: true,
+							watchSlidesProgress: true,
+						});
+						var swiper2 = new Swiper(".productSwiper2", {
+							loop: true,
+							spaceBetween: 10,
+							navigation: {
+								nextEl: ".product-button-next",
+								prevEl: ".product-button-prev",
+							},
+							thumbs: {
+								swiper: swiper,
+							},
+						});
+					</script>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script type="text/javascript">
+		function increaseCount(a, b) {
+			var input = b.previousElementSibling;
+			var value = parseInt(input.value, 10);
+			value = isNaN(value) ? 0 : value;
+			value++;
+			input.value = value;
+		}
+		function decreaseCount(a, b) {
+			var input = b.nextElementSibling;
+			var value = parseInt(input.value, 10);
+			if (value > 1) {
+				value = isNaN(value) ? 0 : value;
+				value--;
+				input.value = value;
+			}
+		}
+	</script>
+	<section class="productcoctail">
+		<div class="container">
+			<div class="productcoctail__wrap">
+				<div class="productcoctail__title">
+					<h3>
+						cocktail examples
+					</h3>
+				</div>
+				<div class="productcoctail__main">
+					<a href="" class="productcoctail__item">
+						<div class="productcoctail__img">
+							<img src="assets/images/prodcoct1.png" alt="">
+						</div>
+						<div class="productcoctail__name">
+							VODKA SODA
+							<svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path d="M18 9.5L12 15.5L6 9.5" stroke="#010101" stroke-width="3" />
+							</svg>
+						</div>
+					</a>
+					<a href="" class="productcoctail__item">
+						<div class="productcoctail__img">
+							<img src="assets/images/prodcoct2.png" alt="">
+						</div>
+						<div class="productcoctail__name">
+							VODKA MULE
+							<svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path d="M18 9.5L12 15.5L6 9.5" stroke="#010101" stroke-width="3" />
+							</svg>
+						</div>
+					</a>
+					<a href="" class="productcoctail__item">
+						<div class="productcoctail__img">
+							<img src="assets/images/prodcoct3.png" alt="">
+						</div>
+						<div class="productcoctail__name">
+							Fuzzy Navel
+							<svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path d="M18 9.5L12 15.5L6 9.5" stroke="#010101" stroke-width="3" />
+							</svg>
+						</div>
+					</a>
+					<a href="" class="productcoctail__item">
+						<div class="productcoctail__img">
+							<img src="assets/images/prodcoct4.png" alt="">
+						</div>
+						<div class="productcoctail__name">
+							Old Fashioned 
+							<svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path d="M18 9.5L12 15.5L6 9.5" stroke="#010101" stroke-width="3" />
+							</svg>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="order">
+		<div class="container">
+			<div class="order__wrap">
+				<img class="order_bg" src="assets/images/order2.png" alt="">
+				<div class="order__subtitle">
+					We beleive in creating a personalized expirience
+					for our customers
+				</div>
+				<div class="order__title">
+					place a custom
+					or a large quantity order
+				</div>
+				<div class="order__description">
+					Fill out a request from here and associate will be in touch with you shortly. We hope you enjoy our
+					garnishes!
+				</div>
+				<a class="order__button" href="">
+					Contact us
+				</a>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="footer__wrap">
+				<div class="col">
+					<a class="footer__logo" href="">
+						<img src="assets/images/footer_logo.svg" alt="">
+					</a>
+					<img class="footer__img" src="assets/images/footer2.svg" alt="">
+				</div>
+				<div class="footer__line"></div>
+				<div class="col">
+					<a class="address" href="">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M12 2C15.87 2 19 5.13 19 9C19 14.25 12 22 12 22C12 22 5 14.25 5 9C5 5.13 8.13 2 12 2ZM7 9C7 11.85 9.92 16.21 12 18.88C14.12 16.19 17 11.88 17 9C17 6.24 14.76 4 12 4C9.24 4 7 6.24 7 9ZM12 11.5C10.6193 11.5 9.5 10.3807 9.5 9C9.5 7.61929 10.6193 6.5 12 6.5C13.3807 6.5 14.5 7.61929 14.5 9C14.5 10.3807 13.3807 11.5 12 11.5Z"
+								fill="#F85528" />
+						</svg>
+						New York City, New York, USA
+					</a>
+					<a class="tel" href="tel:+16468569992">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M6.54 5C6.6 5.89 6.75 6.76 6.99 7.59L5.79 8.79C5.38 7.59 5.12 6.32 5.03 5H6.54ZM16.4 17.02C17.25 17.26 18.12 17.41 19 17.47V18.96C17.68 18.87 16.41 18.61 15.2 18.21L16.4 17.02ZM7.5 3H4C3.45 3 3 3.45 3 4C3 13.39 10.61 21 20 21C20.55 21 21 20.55 21 20V16.51C21 15.96 20.55 15.51 20 15.51C18.76 15.51 17.55 15.31 16.43 14.94C16.33 14.9 16.22 14.89 16.12 14.89C15.86 14.89 15.61 14.99 15.41 15.18L13.21 17.38C10.38 15.93 8.06 13.62 6.62 10.79L8.82 8.59C9.1 8.31 9.18 7.92 9.07 7.57C8.7 6.45 8.5 5.25 8.5 4C8.5 3.45 8.05 3 7.5 3Z"
+								fill="#F85528" />
+						</svg>
+						+1 (646) 856-9992
+					</a>
+					<a class="contact__btn" href="">
+						Contact us
+					</a>
+				</div>
+				<div class="col">
+					<ul class="footer__list">
+						<li>
+							<a href="">
+								Store
+							</a>
+						</li>
+						<li>
+							<a href="">
+								About Us
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Corporate Gifting
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Cocktails
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col">
+					<div class="socies">
+						<a href="">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<rect x="2" y="2" width="20" height="20" rx="4" stroke="#F85528" stroke-width="1.5" />
+								<circle cx="18" cy="6" r="1" fill="#F85528" />
+								<circle cx="12" cy="12" r="5" stroke="#F85528" stroke-width="1.5" />
+							</svg>
+						</a>
+						<a href="">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M18 3H15C12.2386 3 10 5.23858 10 8V10H6V14H10V21H14V14H18V10H14V8C14 7.44772 14.4477 7 15 7H18V3Z"
+									stroke="#F85528" stroke-width="1.5" stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+						</a>
+					</div>
+					<div class="copyright">
+						Copyright © 2023 ShopMillin.com. All rights reserved
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="menu">
+		<div class="menu__container">
+			<div class="menu__wrap">
+				<div class="menu__header">
+					<a href="" class="menu__logo">
+						<img src="assets/images/logo.svg" alt="">
+					</a>
+					<button class="close__menu">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"
+								fill="#010101" />
+						</svg>
+					</button>
+				</div>
+				<div class="menu__main">
+					<ul>
+						<li>
+							<a href="">
+								About us
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Store
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Corporate gifting
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Cocktails
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="menu__footer">
+					<div class="menu__cart">
+						<div class="name">
+							Cart
+						</div>
+						<button>
+							<img src="assets/images/cart.svg" alt="">
+							<span>
+								2
+							</span>
+						</button>
+					</div>
+					<a class="menu__footer__button" href="">
+						Sign in
+					</a>
+					<div class="menu__socies">
+						<a href="">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<rect x="2" y="2" width="20" height="20" rx="4" stroke="#F85528" stroke-width="1.5" />
+								<circle cx="18" cy="6" r="1" fill="#F85528" />
+								<circle cx="12" cy="12" r="5" stroke="#F85528" stroke-width="1.5" />
+							</svg>
+						</a>
+						<a href="">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M18 3H15C12.2386 3 10 5.23858 10 8V10H6V14H10V21H14V14H18V10H14V8C14 7.44772 14.4477 7 15 7H18V3Z"
+									stroke="#F85528" stroke-width="1.5" stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		const openMenuButton = document.querySelector('.header__burger');
+		const closeMenuButton = document.querySelector('.close__menu');
+		const menu = document.querySelector('.menu');
+
+		openMenuButton.addEventListener('click', () => {
+			menu.classList.add('open');
+		});
+
+		closeMenuButton.addEventListener('click', () => {
+			menu.classList.remove('open');
+		});
+	</script>
+</body>
+
+</html>
