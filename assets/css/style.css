@@ -2906,8 +2906,7 @@ details {
     background: #fff;
     padding: 2.375rem 4rem;
     border-radius: 1.875rem;
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
+    margin: auto;
     position: relative;
 }
 .coctailsmenu__cart {
