@@ -673,11 +673,26 @@
 			<div class="reviews__wrap">
 				<div class="reviews__left">
 					<div class="video__container">
-						<video id="myVideo" loop controls class="video">
+						<video id="myVideo" loop controls muted class="video">
 							<source src="assets/images/short video.mp4" type="video/mp4">
 						</video>
 					</div>
 				</div>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/is-in-viewport/3.0.3/isInViewport.min.js"></script>
+				<script>
+					$(document).ready(function () {
+						var $video = $('#myVideo');
+						var $window = $(window);
+
+						$window.on('scroll', function () {
+							if ($video.is(":in-viewport")) {
+								$video[0].play();
+							} else {
+								$video[0].pause();
+							}
+						});
+					});
+				</script>
 				<div class="reviews__right">
 					<div class="reviews__header">
 						<div class="reviews__title">
