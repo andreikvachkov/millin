@@ -10,7 +10,7 @@
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+	<script src="assets/js/isInViewport.min.js"></script>
 	<link rel="stylesheet" href="assets/fonts/stylesheet.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -673,19 +673,9 @@
 			<div class="reviews__wrap">
 				<div class="reviews__left">
 					<div class="video__container">
-						<video id="myVideo">
+						<video id="myVideo" loop controls class="video">
 							<source src="assets/images/short video.mp4" type="video/mp4">
 						</video>
-						<button id="playButton">
-							<svg width="68" height="68" viewBox="0 0 68 68" fill="none"
-								xmlns="http://www.w3.org/2000/svg">
-								<rect width="68" height="68" fill="#010101" />
-								<rect x="19" y="19" width="30" height="30" stroke="#010101" stroke-width="2" />
-								<path
-									d="M41.7111 33.1056L27.2367 25.8683C26.4388 25.4694 25.5 26.0496 25.5 26.9416V41.0584C25.5 41.9504 26.4388 42.5306 27.2367 42.1317L41.7111 34.8944C42.4482 34.5259 42.4482 33.4741 41.7111 33.1056Z"
-									stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-							</svg>
-						</button>
 					</div>
 				</div>
 				<div class="reviews__right">
@@ -998,14 +988,6 @@
 			</div>
 		</div>
 	</section>
-	<script>
-		document.getElementById('playButton').addEventListener('click', function () {
-			var video = document.getElementById('myVideo');
-			video.play();
-			video.setAttribute('controls', 'controls');
-			this.style.display = 'none';
-		});
-	</script>
 	<section class="order">
 		<div class="container">
 			<div class="order__wrap">
@@ -1119,8 +1101,10 @@
 					</a>
 					<button class="close__menu">
 						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="#010101" />
-						  </svg>
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"
+								fill="#010101" />
+						</svg>
 					</button>
 				</div>
 				<div class="menu__main">
@@ -1186,18 +1170,18 @@
 		</div>
 	</div>
 	<script>
-        const openMenuButton = document.querySelector('.header__burger');
-        const closeMenuButton = document.querySelector('.close__menu');
-        const menu = document.querySelector('.menu');
+		const openMenuButton = document.querySelector('.header__burger');
+		const closeMenuButton = document.querySelector('.close__menu');
+		const menu = document.querySelector('.menu');
 
-        openMenuButton.addEventListener('click', () => {
-            menu.classList.add('open');
-        });
+		openMenuButton.addEventListener('click', () => {
+			menu.classList.add('open');
+		});
 
-        closeMenuButton.addEventListener('click', () => {
-            menu.classList.remove('open');
-        });
-    </script>
+		closeMenuButton.addEventListener('click', () => {
+			menu.classList.remove('open');
+		});
+	</script>
 </body>
 
 </html>

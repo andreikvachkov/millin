@@ -207,82 +207,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="coctailsmenu__cart">
-                    <div class="coctailsmenu__cart__left">
-                        <img src="assets/images/coctailcart.png" alt="">
-                    </div>
-                    <div class="coctailsmenu__cart__right">
-                        <div class="coctailsmenu__cart__name">
-                            Ruby Red Spritz  
-                        </div>
-                        <div class="coctailsmenu__cart__item">
-                            <div class="coctailsmenu__cart__item__name">
-                                Story
-                            </div>
-                            <div class="coctailsmenu__cart__item__content">
-                                The drink began in the Veneto region of Italy around 1800’s. The world spritz is German
-                                for splash, and this name was given to the way Austrian soldiers prepared the Italian
-                                wine they were drinking. They found it too strong, and in order to make it easier to
-                                they added a splash (a spritz) of still water.
-                            </div>
-                        </div>
-                        <div class="coctailsmenu__cart__item">
-                            <div class="coctailsmenu__cart__item__name">
-                                Ingredients
-                            </div>
-                            <div class="coctailsmenu__cart__item__content">
-                                1 oz dry gin <br>
-                                1/2 oz Campari <br>
-                                1 oz grapefruit juice, freshly squeezed  <br>
-                                3 oz chilled dry sparkling rosé <br>
-                                Splash of club soda (optional) <br>
-                                Garnish: dragon fruit
-                            </div>
-                        </div>
-                        <div class="coctailsmenu__cart__item">
-                            <div class="coctailsmenu__cart__item__name">
-                                Steps
-                            </div>
-                            <div class="coctailsmenu__cart__item__content">
-                                <ul>
-                                    <li>
-                                        Poor dry gin, Campari and grapefruit juice over ice and stir until well-chilled.
-                                    </li>
-                                    <li>
-                                        Top with sparkling rose.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="coctailsmenu__cart__item">
-                            <div class="coctailsmenu__cart__item__name">
-                                Garnish
-                            </div>
-                            <div class="coctailsmenu__cart__item__content">
-                                Opt for the floral undertones of dragon fruit instead of the traditional orange slices
-                                for garnish. Present your garnishes on cocktail picks or along the rim of the glass for
-                                added elegance.
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
-    <script>
-        document.querySelectorAll('.coctailsmenu__item').forEach(item => {
-            item.addEventListener('click', function () {
-                if (this.classList.contains('active')) {
-                    this.classList.remove('active');
-                    document.querySelector('.coctailsmenu__cart').classList.remove('active');
-                } else {
-                    document.querySelectorAll('.coctailsmenu__item').forEach(i => i.classList.remove('active'));
-                    this.classList.add('active');
-                    document.querySelector('.coctailsmenu__cart').classList.add('active');
-                }
-            });
-        });
-    </script>
     <section class="eventbanner">
         <div class="container">
             <div class="eventbanner__wrap">
@@ -463,6 +390,101 @@
 
         closeMenuButton.addEventListener('click', () => {
             menu.classList.remove('open');
+        });
+    </script>
+    <div class="popupcoctail" id="popup">
+        <div class="popupcoctail__container">
+            <button class="close">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M6.17472 6.17569C6.63033 5.72008 7.36902 5.72008 7.82463 6.17569L13.9997 12.3507L20.1747 6.17569C20.6303 5.72008 21.369 5.72008 21.8246 6.17569C22.2802 6.6313 22.2802 7.37 21.8246 7.82561L15.6496 14.0007L21.8246 20.1757C22.2802 20.6313 22.2802 21.37 21.8246 21.8256C21.369 22.2812 20.6303 22.2812 20.1747 21.8256L13.9997 15.6506L7.82463 21.8256C7.36902 22.2812 6.63033 22.2812 6.17472 21.8256C5.71911 21.37 5.71911 20.6313 6.17472 20.1757L12.3498 14.0007L6.17472 7.82561C5.7191 7.37 5.7191 6.6313 6.17472 6.17569Z"
+                        fill="#010101" />
+                </svg>
+            </button>
+            <div class="popupcoctail__wrap">
+                <div class="coctailsmenu__cart">
+                    <div class="coctailsmenu__cart__left">
+                        <img src="assets/images/coctailcart.png" alt="">
+                    </div>
+                    <div class="coctailsmenu__cart__right">
+                        <div class="coctailsmenu__cart__name">
+                            Ruby Red Spritz  
+                        </div>
+                        <div class="coctailsmenu__cart__item">
+                            <div class="coctailsmenu__cart__item__name">
+                                Story
+                            </div>
+                            <div class="coctailsmenu__cart__item__content">
+                                The drink began in the Veneto region of Italy around 1800’s. The world spritz is German
+                                for splash, and this name was given to the way Austrian soldiers prepared the Italian
+                                wine they were drinking. They found it too strong, and in order to make it easier to
+                                they added a splash (a spritz) of still water.
+                            </div>
+                        </div>
+                        <div class="coctailsmenu__cart__item">
+                            <div class="coctailsmenu__cart__item__name">
+                                Ingredients
+                            </div>
+                            <div class="coctailsmenu__cart__item__content">
+                                1 oz dry gin <br>
+                                1/2 oz Campari <br>
+                                1 oz grapefruit juice, freshly squeezed  <br>
+                                3 oz chilled dry sparkling rosé <br>
+                                Splash of club soda (optional) <br>
+                                Garnish: dragon fruit
+                            </div>
+                        </div>
+                        <div class="coctailsmenu__cart__item">
+                            <div class="coctailsmenu__cart__item__name">
+                                Steps
+                            </div>
+                            <div class="coctailsmenu__cart__item__content">
+                                <ul>
+                                    <li>
+                                        Poor dry gin, Campari and grapefruit juice over ice and stir until well-chilled.
+                                    </li>
+                                    <li>
+                                        Top with sparkling rose.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="coctailsmenu__cart__item">
+                            <div class="coctailsmenu__cart__item__name">
+                                Garnish
+                            </div>
+                            <div class="coctailsmenu__cart__item__content">
+                                Opt for the floral undertones of dragon fruit instead of the traditional orange slices
+                                for garnish. Present your garnishes on cocktail picks or along the rim of the glass for
+                                added elegance.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const items = document.querySelectorAll('.coctailsmenu__item');
+            const popup = document.getElementById('popup');
+            const closeBtn = document.querySelector('.popupcoctail .close');
+
+            items.forEach(item => {
+                item.addEventListener('click', () => {
+                    popup.style.display = 'flex';
+                });
+            });
+
+            closeBtn.addEventListener('click', () => {
+                popup.style.display = 'none';
+            });
+
+            popup.addEventListener('click', (e) => {
+                if (e.target === popup) {
+                    popup.style.display = 'none';
+                }
+            });
         });
     </script>
 </body>
